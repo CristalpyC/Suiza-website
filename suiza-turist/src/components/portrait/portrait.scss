@@ -1,0 +1,127 @@
+.portrait__container{
+    background: linear-gradient(185deg, #539bb7, #ffffff);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    h1{
+        color: #f7f2eb;
+        text-shadow: 0px 8px 18px #1f515c;
+        text-transform: uppercase;
+        letter-spacing: 15px;
+        font-size: 7rem;
+        margin-bottom: 31rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        @media screen and (max-width: 1056px){
+            font-size: 5rem;
+        }
+
+        @media screen and (max-width: 814px){
+            font-size: 3rem;
+        }
+
+        @media screen and (max-width: 568px){
+            font-size: 2.2rem;
+        }
+
+        @media screen and (max-width: 457px){
+            font-size: 3rem;
+            letter-spacing: 0;
+        }
+
+        @media screen and (max-width: 411px){
+            font-size: 2.3rem; 
+            margin-top: 3rem;
+
+        }
+
+        @media screen and (max-width: 411px){
+            font-size: 2.3rem; 
+        }
+
+        @media screen and (max-width: 288px){
+            font-size: 10vmin; 
+        }
+        
+    }
+
+    .mountains{
+        background-image: url('/mountains.png');
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 3;
+    }
+
+    .travelers{
+            background-image: url('/traveler.webp');
+            background-size: cover;
+            background-position: bottom;
+            width: 25%;
+            height: 48%;
+            position: absolute;
+            z-index: 2;
+
+            @media screen and (max-width: 735px){
+                width: 25%;
+                height: 40%; 
+            }
+
+            @media screen and (max-width: 604px){
+                width: 35%;
+                height: 40%; 
+            }
+
+            @media screen and (max-width: 436px){
+                width: 40%;
+                height: 40%; 
+            }
+
+            @media screen and (max-width: 495px){
+                width: 55%;
+                height: 40%; 
+            }
+
+            @media screen and (max-width: 282px){
+                width: 100%;
+                height: 50%; 
+            }
+
+            @media screen and (max-width: 220px){
+                width: 85vw;
+                height: 40%; 
+            }
+    }
+
+    .clouds{
+        background-image: url('/clouds.png');
+        background-size: cover;
+        background-position: top;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+    }
+
+    .trees{
+        background-image: url('/descarga.png');
+        background-size: cover;
+        background-position: top;
+        width: 40%;
+        height: 40%;
+        position: absolute;
+        z-index: 1;
+
+        @media screen and (max-width: 493px){
+            width: 100%;
+            height: 40%; 
+        }
+    }
+}
+

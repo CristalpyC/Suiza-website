@@ -1,0 +1,74 @@
+.about__container{
+    background: linear-gradient(185deg, #539bb7, #ffffff);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    h2{
+        margin-top: 5rem;
+        z-index: 1;
+        font-size: 4rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: #ffffff;
+        text-shadow: 2px 7px 5px #7a7672;
+    }
+
+    .snow{
+        background-image: url('https://pngimg.com/d/snow_PNG3.png');
+        background-size: cover;
+        background-position: bottom;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+
+    .info__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .description{
+            p{
+                font-size: 2rem;
+                padding-right: 22px;
+                color: #7a7672;
+                font-family: 'Josefin Sans', sans-serif;
+
+                span{
+                    color: #0a879b;
+                }
+            }
+
+            button{
+                border: none;
+                margin-top: 1.2rem;
+                padding: 15px;
+                font-size: 1.2rem;
+                white-space: nowrap;
+                border-radius: 25px;
+                background-color: #c23449;
+                color: #ffff;
+                font-family: 'Josefin Sans', sans-serif;
+                transition: ease-in-out 1s;
+            }
+
+            button:hover{
+                background-color: #961e30;
+                transform: scale(1.1);
+            }
+        }
+    }
+    
+}
