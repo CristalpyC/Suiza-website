@@ -1,27 +1,68 @@
+import { Extra } from "../extra-info/Extra";
+import { Footer } from "../footer/Footer";
+import { motion } from "framer-motion";
 import "./places.scss";
 
+const variants = {
+    initial:{
+        y: 100,
+        opacity: 0
+    },
+    animate:{
+        y:1,
+        opacity: 1,
+        transition:{
+            delay: .2,
+            duration: .2,
+            type: "spring", stiffness: 100 
+        },
+    },
+}
+
+const variants2 = {
+    initial:{
+        y: -200,
+        opacity: 0
+    },
+    animate:{
+        y:1,
+        opacity: 1,
+        transition:{
+            delay: .2,
+            duration: .2,
+            type: "spring", stiffness: 100 
+        },
+    },
+}
 export const Places = () => {
   return (
     <div className="places__container">
-        <h1>Essential <span>Swiss Stops</span></h1>
-        <div className="curve"></div>
         <div className="places__info">
-            <div>
+            <motion.div variants={variants} whileInView="animate" initial="initial">
                 <img src="https://media.traveler.es/photos/61376edc86b46eac7cf5a463/master/w_1600%2Cc_limit/134371.jpg" alt="" />
                 <h3>Zúrich <span>⮕</span></h3>
-            </div>
-            <div>
-                <img src="https://alpexcursion.com/storage/media/Geneva/s/Geneva-in-Swiss_1200.webp" alt="" />
-                <h3>Ginebra <span>⮕</span></h3>
-            </div>
-            <div>
+            </motion.div>
+            <motion.div variants={variants2} whileInView="animate" initial="initial">
+                <img className="pic2" src="https://alpexcursion.com/storage/media/Geneva/s/Geneva-in-Swiss_1200.webp" alt="" />
+                <h3 className="pic2__title">Ginebra <span>⮕</span></h3>
+            </motion.div>
+            <motion.div variants={variants} whileInView="animate" initial="initial">
                 <img src="https://www.travelandleisure.com/thmb/F3V1ei2YrUH4Qd_fvSgkAneZ4R8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-header-zermatt-switzerland-ZERMATT0123-08b7127082434b9f83db57251c051c1b.jpg" alt="" />
                 <h3>Zermatt <span>⮕</span></h3>
-            </div>
-            <div>
-                <img src="https://wp-content.miviaje.com/2018/11/ciudad-medieval-lucerna.jpg" alt="" />
+            </motion.div>
+            {
+                /*
+                <div>
+                <img src="https://media.traveler.es/photos/61376edc86b46eac7cf5a463/master/w_1600%2Cc_limit/134371.jpg" alt="" />
                 <h3>Lucerna <span>⮕</span></h3>
-            </div>
+            </div>*/
+            }
+        </div>
+        <div>
+            <Extra />
+        </div>
+        <div>
+            <Footer />
         </div>
     </div>
   )

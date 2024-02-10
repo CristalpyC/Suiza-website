@@ -9,12 +9,32 @@
     img{
         width: 20%;
         margin-bottom: 1px;
+
+        @media screen and (max-width: 914px){
+            width: 25%;
+        }
+
+        @media screen and (max-width: 595px){
+            width: 30%;
+        }
+
+        @media screen and (max-width: 545px){
+            width: 40%;
+        }
+
+        @media screen and (max-width: 355px){
+            width: 50%;
+        }
     }
 
-    p{
+    .text{
         color: #fff;
         font-family: 'Josefin Sans', sans-serif;
         font-weight: 300;
         padding-bottom: 10px;
+
+        @media screen and (max-width: 399px){
+            font-size: 3vmin;
+        }
     }
 }
