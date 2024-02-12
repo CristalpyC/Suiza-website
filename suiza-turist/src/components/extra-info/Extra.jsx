@@ -24,8 +24,8 @@ export const Extra = () => {
         <motion.div className="info" variants={variants} whileInView="animate" initial="initial">
           <div>
             <h4>
-              {`"El conocimiento de tu propia oscuridad es el 
-                mejor método para hacer frente a las tinieblas de otras personas."`}
+              {`"Knowing your own darkness is the best method for 
+              dealing with other people's darkness."`}
             </h4>
             <p>- Henry F. Amiel</p>
           </div>

@@ -9,12 +9,12 @@
     overflow: hidden;
 
     @media screen and (max-width: 721px){
-        margin-top: 2rem;
+        margin-top: 8rem;
     }
 
-    @media screen and (max-width: 415px){
+    /*@media screen and (max-width: 415px){
         margin-top: 4rem;
-    }
+    }*/
 
     /*@media screen and (max-width: 359px){
         margin-top: 2rem;
@@ -25,7 +25,7 @@
     }*/
 
     h2{
-        margin-top: 5rem;
+        margin-top: 15rem; //5
         z-index: 1;
         font-size: 4rem;
         //white-space: nowrap;
@@ -92,17 +92,13 @@
             height: 100%;
 
             @media screen and (max-width: 720px){
-                width: 35%;
-                height: auto;
+                display: none;
             }
+
 
             @media screen and (max-width: 635px){
                 width: 40%;
                 height: auto;
-            }
-
-            @media screen and (max-width: 553px){
-                display: none;
             }
         }
 
@@ -119,6 +115,10 @@
 
                 @media screen and (max-width: 980px){
                     font-size: 1.5rem; 
+                }
+
+                @media screen and (max-width: 791px){
+                    font-size: 1.3rem; 
                 }
 
                 @media screen and (max-width: 720px){
@@ -147,6 +147,14 @@
                     color: #ffff;
                     font-family: 'Josefin Sans', sans-serif;
                     transition: ease-in-out 1s;
+
+                    @media screen and (max-width: 721px){
+                        margin-top: -2rem;
+                    }
+
+                    @media screen and (max-width: 226px){
+                        font-size: 1rem; 
+                    }
                 }
     
                 button:hover{
@@ -154,13 +162,11 @@
                     transform: scale(1.1);
                 }
 
-                @media screen and (max-width: 720px){
+                /*@media screen and (max-width: 720px){
                     margin-top: -3rem
-                }
+                }*/
 
-                @media screen and (max-width: 226px){
-                    font-size: 1rem; 
-                }
+                
             }
 
             .arrow__icon{
@@ -168,11 +174,15 @@
                 margin-top: 1rem;
 
                 @media screen and (max-width: 721px){
-                    margin-top: 2rem;
+                    margin-top: -2rem;
                 }
 
                 @media screen and (max-width: 553px){
                     font-size: 2rem; 
+                }
+
+                @media screen and (max-width: 387px){
+                    font-size: 8vmin; 
                 }
 
             }

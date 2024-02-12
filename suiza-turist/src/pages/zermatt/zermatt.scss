@@ -1,0 +1,117 @@
+.zermatt__container{
+    width: 100%;
+    height: 100%;
+    background-color: #eaf6f6;
+    .zermatt__title{
+        background-image: url("/zermattbg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        h1{
+            color: #f7f2eb;
+            text-shadow: 0px 8px 18px #1f515c;
+            text-transform: uppercase;
+            font-size: 7rem;
+            text-align: center;
+            padding-top: 9rem;//31
+            padding-bottom: 9rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            @media screen and (max-width: 475px){
+                font-size: 6rem;
+            }
+
+            @media screen and (max-width: 400px){
+                font-size: 5rem;
+            }
+
+            @media screen and (max-width: 313px){
+                font-size: 18vmin;
+            }
+        }
+    }
+
+    .zermatt__info{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        padding: 15px;
+        padding-top: 25px;
+
+        p{
+            margin-top: 2rem;
+            font-size: 1.3rem;
+            text-align: center;
+        }
+    }
+
+    .zermattimg__container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5rem;
+        gap: 2rem;
+
+        @media screen and (max-width: 850px){
+            flex-wrap: wrap;
+        }
+
+        img{
+            width: 30%;
+            height: 35vh;
+            transition: ease-in-out 1s;
+
+            @media screen and (max-width: 850px){
+                width: 80%;
+            }
+        }
+
+        img:hover{
+            filter: brightness(70%);
+        }
+    }
+
+    .zermatt__data{
+        padding: 25px;
+        padding-top: 7rem;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        h2{
+            font-weight: 300;
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+            text-align: center;
+            color: #ad9880;
+
+            @media screen and (max-width: 334px){
+                font-size: 18vmin;
+            }
+        }
+
+        .zermattc{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.3rem;
+            overflow: hidden;
+
+            @media screen and (max-width: 700px){
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            img{
+                width: 30%;
+
+                @media screen and (max-width: 554px){
+                    width: 50%;
+                }
+            }
+
+            ul{
+                padding: 25px;
+                color: #34495e;
+                list-style-type:square
+
+            }
+        }
+    }
+}

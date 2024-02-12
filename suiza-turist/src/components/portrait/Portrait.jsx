@@ -33,7 +33,7 @@ const textVariant = {
   },
   animate:{
     opacity: 1,
-    transition: {delay: .8, duration: .5}
+    transition: {delay: .3, duration: .1}
   }
 }
 export const Portrait = () => {
@@ -43,13 +43,14 @@ export const Portrait = () => {
     offset: ["start start", "end start"]
   })
 
-  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "800%"]);
+  const yText = useTransform(scrollYProgress, [0, 1], ["0%", "900%"]);
   const yTree = useTransform(scrollYProgress, [0, 1], ["0%", "300%"]);
   const yCloud = useTransform(scrollYProgress, [0, 1], ["0%", "250%"]);
 
   return (
     <div className="portrait__container">
         <motion.h1 style={{y: yText}} variants={textVariant} animate="animate" initial="initial">Switzerland</motion.h1>
+        <div className="pine"></div>
         <div className="mountains">
           <div className="mouse__scroll">
             <motion.img variants={variants} animate="scrollButton" src="https://static.thenounproject.com/png/496866-200.png" alt="" />

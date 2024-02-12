@@ -1,17 +1,21 @@
 import './app.scss'
-import { About } from './components/about/About'
-import { Portrait } from './components/portrait/Portrait'
-import { Places } from './components/places/Places'
-import { Title } from './components/extra-info/extra/Title'
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { Zurich } from './pages/zurich/zurich'
+import { MainPage } from './MainPage'
+import { Geneva } from './pages/geneva/Geneva'
+import { Zermatt } from './pages/zermatt/Zermatt';
+
 
 function App() {
   return (
-    <div>
-      <section><Portrait /></section>
-      <section><About /></section>
-      <section><Title /></section>
-      <section><Places /></section>
-    </div>
+    <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainPage />}/>
+          <Route path="/zurich" element={<Zurich />}/>
+          <Route path="/geneva" element={<Geneva />}/>
+          <Route path="/zermatt" element={<Zermatt />}/>
+        </Routes>
+    </BrowserRouter>
   )
 }
 
