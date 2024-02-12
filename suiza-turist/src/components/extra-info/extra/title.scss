@@ -2,11 +2,9 @@
     background-image: url('https://images6.alphacoders.com/465/465336.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    //background: linear-gradient(185deg, #539bb7, #fff);
     height: 100%;
 
     .curve{
-        //margin-top: 15rem;
         background-image: url('/wave.svg');
         background-size: cover;
         background-position: bottom;
@@ -36,7 +34,6 @@
         @media screen and (max-width: 294px){
             font-size: 15vmin; 
         }
-
 
         span{
             color: crimson;

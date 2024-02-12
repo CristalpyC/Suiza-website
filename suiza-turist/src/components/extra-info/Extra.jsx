@@ -10,12 +10,9 @@ const variants = {
     y:1,
     opacity: 1,
     transition:{
-      //delay: 1,
       duration: 1,
-      //repeat: Infinity,
     },
     type: "spring",
-    //stiffness: 100,
   },
 }
 export const Extra = () => {
